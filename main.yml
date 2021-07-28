@@ -1,0 +1,11 @@
+---
+- name: Install Prometheus & Grafana
+  hosts: web
+  become: yes
+  gather_facts: no
+  roles:
+    - prometheus
+    - grafana
+
+
+    
